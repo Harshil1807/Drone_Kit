@@ -1,8 +1,3 @@
-print ("Start simulator (SITL)")
-#import dronekit_sitl
-#sitl = dronekit_sitl.start_default()
-#connection_string = sitl.connection_string()
-
 # Import DroneKit-Python
 from dronekit import connect, VehicleMode
 
@@ -22,6 +17,4 @@ print (" Mode: %s" % vehicle.mode.name)    # settable
 # Close vehicle object before exiting script
 vehicle.close()
 
-# Shut down simulator
-#sitl.stop()
 print("Completed")
